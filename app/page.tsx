@@ -141,7 +141,7 @@ export default function Home() {
       </div>
 
       <footer className="w-full text-center text-white drop-shadow-[0_0_10px_rgba(0,0,0,0.8)] [text-shadow:_1px_1px_2px_rgb(0_0_0_/_70%)] text-sm py-4">
-        Powered by Google Gemini AI | Bronx Vibes Only
+        Powered by OpenAI | Bronx Vibes Only
       </footer>
     </main>
   )
