@@ -9,10 +9,10 @@ const getErrorMessage = () => {
     title: "API Key Missing",
     message: "Please add your Gemini API key to continue.",
     instructions: [
-      "1. Create a file named '.env.local' in the root directory",
-      "2. Add your API key: NEXT_PUBLIC_GEMINI_API_KEY=your_api_key_here",
-      "3. Get your API key from: https://makersuite.google.com/app/apikey",
-      "4. Restart the development server"
+      "1. Go to Secrets (🔒) in the left sidebar",
+      "2. Add a new secret: NEXT_PUBLIC_GEMINI_API_KEY",
+      "3. Get your API key from: https://aistudio.google.com/app/apikey",
+      "4. Click the Run button to restart the app"
     ].join("\n")
   };
 };

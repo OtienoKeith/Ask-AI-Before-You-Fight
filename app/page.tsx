@@ -65,7 +65,7 @@ export default function Home() {
 
     try {
       const recognition = new SpeechRecognition()
-      recognition.continuous = true
+      recognition.continuous = false
       recognition.interimResults = true
       recognition.lang = "en-US"
 
@@ -168,7 +168,14 @@ export default function Home() {
   }
 
   useEffect(() => {
+    console.log("Initializing speech recognition...")
     recognitionRef.current = initializeSpeechRecognition()
+    
+    if (recognitionRef.current) {
+      console.log("Speech recognition initialized successfully")
+    } else {
+      console.log("Speech recognition failed to initialize")
+    }
 
     return () => {
       if (recognitionRef.current) {
